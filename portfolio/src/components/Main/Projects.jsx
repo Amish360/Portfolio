@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Skills() {
+function Projects() {
   const cardStyle = {
     width: '18rem'
   };
 
+  const [projects] = useState(
+    [
+      {
+        Title:"IMDB Clone",
+        Description:""
+      }
+    ]
+  )
+
   return (
     <div>
-      <h1>Skills</h1>
+      <h1>Projects</h1>
 
       <div className="card" style={cardStyle}>
         <div className="card-body">
@@ -33,4 +42,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Projects;
